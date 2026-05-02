@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h1>📊 Analytics Dashboard</h1>
+</div>
+
+<div class="container analytics-container">
+
+    <div class="card">
+        <h2>📈 Study Hours vs Marks</h2>
+        <img src="/static/graph.png" class="graph-img">
+    </div>
+
+    <div class="card">
+        <h2>📊 Marks Distribution</h2>
+        <img src="/static/hist.png" class="graph-img">
+    </div>
+
+</div>
+
+<div class="center-btn">
+    <a href="/"><button>⬅ Back to Dashboard</button></a>
+</div>
+
+</body>
+</html>

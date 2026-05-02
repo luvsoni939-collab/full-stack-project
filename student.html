@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h1>🎓 Student Details</h1>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <p><b>Roll No:</b> {{ roll }}</p>
+        <p><b>Marks:</b> {{ marks }}</p>
+        <p><b>Class Average:</b> {{ avg }}</p>
+        <p><b>Performance:</b> {{ performance }}</p>
+
+        <br>
+        <a href="/"><button>⬅ Back to Dashboard</button></a>
+    </div>
+
+</div>
+
+</body>
+</html>
